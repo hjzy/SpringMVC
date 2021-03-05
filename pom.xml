@@ -12,6 +12,7 @@
         <module>SpringMVC-01-Serlvet</module>
         <module>SpringMVC-02-hellomvc</module>
         <module>SpringMVC-02-re-helloMVC</module>
+        <module>SpringMVC-04-controller</module>
     </modules>
 
     <properties>
@@ -27,7 +28,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.1.9.RELEASE</version>
+            <version>5.2.8.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
