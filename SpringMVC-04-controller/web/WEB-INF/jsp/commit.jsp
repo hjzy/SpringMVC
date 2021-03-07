@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="/commitName">
+<form action="/commitName" method="post">
     <label>
         <input type="text" name="username" value="text"/>
     </label>

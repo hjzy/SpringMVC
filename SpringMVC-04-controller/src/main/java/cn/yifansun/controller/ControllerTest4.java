@@ -24,16 +24,5 @@ public class ControllerTest4 {
         //返回视图位置
         return "test";
     }
-//    @RequestMapping("/commitName/{user    name}")
-    @RequestMapping("/commitName")
-    public String commit(Model model,HttpServletRequest request, @RequestParam("username")  String name){
-        //String name =request.getParameter("name");
-        System.out.println(name);
-        model.addAttribute("name",name);
-        return "test";
-    }
-    @RequestMapping("/toCommitName")
-    public String toCommit(){
-        return "commit";
-    }
+
 }
