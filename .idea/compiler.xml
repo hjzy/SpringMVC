@@ -12,6 +12,8 @@
         <module name="SpringMVC-04-controller" />
         <module name="SpringMVC-01-Serlvet" />
         <module name="SpringMVC-02-hellomvc" />
+        <module name="SpringMVC-06-Json" />
+        <module name="SpringMVC-07-ajax" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
