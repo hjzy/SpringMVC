@@ -1,10 +1,14 @@
 package cn.yifansun.controller;
 
+import cn.yifansun.pojo.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class AjaxController {
@@ -17,5 +21,13 @@ public class AjaxController {
             response.getWriter().print("false");
         }
     }
-
+    @RequestMapping("/a2")
+    @ResponseBody
+    public List<User> ajax2(){
+        List<User> list = new ArrayList<User>();
+        list.add(new User("秦疆1号",3,"男"));
+        list.add(new User("秦疆2号",3,"男"));
+        list.add(new User("秦疆3号",3,"男"));
+        return list; //由于@RestController注解，将list转成json格式返回
+    }
 }
