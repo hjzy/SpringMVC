@@ -20,8 +20,11 @@
 
     $(function () {
         $("#btn").click(function () {
+            /*
+            $.post (url,param[可以省略]，success )
+             */
             $.post("${pageContext.request.contextPath}/a2",
-                success=function a (data) {
+                function a (data) {
                 console.log(data)
                 let html = "";
                 for (let i = 0; i <data.length ; i++) {
